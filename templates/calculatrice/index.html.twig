@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calculatrice{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{asset('js/app.js')}}"></script>
+{% endblock %}
+
+{% block body %}
+<div class="grid-container">
+    <div class="site-title">
+        <h1>Calculatrice</h1>
+    </div>
+    <form action="" method="get" class="grid-form">
+        <input type="text" class="display" name="" id="" readonly>
+        <button type="button" class="number n7" >7</button>
+        <button type="button" class="number n8" >8</button>
+        <button type="button" class="number n9" >9</button>
+        <button type="button" class="operator odiv" >/</button>
+        <button type="button" class="del" >C</button>
+        
+        <button type="button" class="number n4" >4</button>
+        <button type="button" class="number n5" >5</button>
+        <button type="button" class="number n6" >6</button>
+        <button type="button" class="operator mult" >*</button>
+        <button type="button" class="operator pourcentage" >%</button>
+        
+        <button type="button" class="number n1" >1</button>
+        <button type="button" class="number n2" >2</button>
+        <button type="button" class="number n3" >3</button>
+        <button type="button" class="operator sub" >-</button>
+
+        <button type="button" class="operator eq" >=</button>
+        
+        <button type="button" class="number n0" >0</button>
+        <button type="button" class="comma" >,</button>
+        <button type="button" class="operator plus" >+</button>
+    </form>
+</div>
+{% endblock %}

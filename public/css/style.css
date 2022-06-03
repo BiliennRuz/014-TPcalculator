@@ -1,0 +1,43 @@
+.grid-container{
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+}
+.site-title h1{
+        text-align: center;
+}
+
+.grid-form{
+    display: grid;
+    gap: 10px;
+}
+
+.display{
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #CED4DA;
+    background-color: #E9ECEF;
+}
+
+.n0{
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.eq{
+    grid-column: 5;
+    grid-row: 4/ span 2;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #666666;
+    color: #fff;
+    border: 1px solid #4a4a4a;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
