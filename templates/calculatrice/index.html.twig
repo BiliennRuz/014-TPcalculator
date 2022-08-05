@@ -15,8 +15,8 @@
     <div class="site-title">
         <h1>Calculatrice</h1>
     </div>
-    <form action="" method="get" class="grid-form">
-        <input type="text" class="display" name="" id="" readonly>
+    <form action="" method="post" class="grid-form">
+        <input type="text" class="display" value="{{result}}" name="exp" id="" readonly>
         <button type="button" class="number n7" >7</button>
         <button type="button" class="number n8" >8</button>
         <button type="button" class="number n9" >9</button>
@@ -34,10 +34,10 @@
         <button type="button" class="number n3" >3</button>
         <button type="button" class="operator sub" >-</button>
 
-        <button type="button" class="operator eq" >=</button>
+        <button type="submit" class="operator eq" >=</button>
         
         <button type="button" class="number n0" >0</button>
-        <button type="button" class="comma" >,</button>
+        <button type="button" class="comma" >.</button>
         <button type="button" class="operator plus" >+</button>
     </form>
 </div>
